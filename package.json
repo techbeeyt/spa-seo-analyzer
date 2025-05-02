@@ -1,0 +1,29 @@
+{
+  "name": "spa-seo-simulator",
+  "version": "1.0.0",
+  "description": "SEO simulation and auditing tool for Single-Page Applications (SPAs)",
+  "main": "dist/index.js",
+  "bin": {
+    "spa-seo": "./dist/bin/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/bin/cli.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["seo", "spa", "crawler", "puppeteer", "audit"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^9.4.0",
+    "jsdom": "^22.1.0",
+    "puppeteer": "^19.0.0",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.1",
+    "@types/node": "^18.7.18",
+    "typescript": "^4.8.3"
+  }
+}
