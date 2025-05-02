@@ -29,7 +29,8 @@ Custom timeout (e.g., 15 seconds):spa-seo https://example.com --timeout 15000
 
 
 
-Programmatic Usage
+## Programmatic Usage
+```js
 import { simulateSEO } from 'spa-seo-simulator';
 
 async function run() {
@@ -38,31 +39,33 @@ async function run() {
 }
 
 run();
+```
 
-SEO Checks Performed
+## SEO Checks Performed
 
-Title Tag: Checks for presence of <title>.
-Meta Description: Checks for <meta name="description">.
-Canonical Tag: Verifies <link rel="canonical"> exists.
-Heading Structure: Ensures exactly one <h1> and valid <h2> usage.
-Internal Links: Counts internal <a> links.
-Image Alt Attributes: Checks for missing alt attributes on <img>.
+- Title Tag: Checks for presence of ```<title>```.
+- Meta Description: Checks for ```<meta name="description">```.
+- Canonical Tag: Verifies ```<link rel="canonical">``` exists.
+- Heading Structure: Ensures exactly one ```<h1>``` and valid ```<h2>``` usage.
+- Internal Links: Counts internal ```<a>``` links.
+- Image Alt Attributes: Checks for missing alt attributes on ```<img>```.
 
-Example Output
-Terminal
+## Example Output
+### Terminal
 SEO Simulation Report
 -----------------------
-URL: https://techbeeyt.github.io/spa-seo-checker
-Status: 200
-SEO Checks:
-✓ Title Tag: Title found: My SPA
-✗ Meta Description: No meta description found
-✓ Canonical Tag: Canonical found: https://techbeeyt.github.io/spa-seo-checker
-✓ Heading Structure: One H1 found, 2 H2s found
-✓ Internal Links: Found 5 internal links
-✓ Image Alt Attributes: All images have alt attributes
+URL: https://example.com <br />
+Status: 200 <br />
+SEO Checks:<br />
+✓ Title Tag: Title found: My SPA<br />
+✗ Meta Description: No meta description found<br />
+✓ Canonical Tag: Canonical found: https://example.com<br />
+✓ Heading Structure: One H1 found, 2 H2s found<br />
+✓ Internal Links: Found 5 internal links<br />
+✓ Image Alt Attributes: All images have alt attributes<br />
 
-JSON
+### JSON
+```json
 {
   "url": "https://example.com",
   "status": 200,
@@ -72,21 +75,22 @@ JSON
     ...
   }
 }
+```
 
-Development
+## Development
 
-Clone the repo:git clone <repo-url>
-
-
-Install dependencies:npm install
+Clone the repo:git clone [Github Repo](https://github.com/techbeeyt/spa-seo-analyzer.git)
 
 
-Build the project:npm run build
+Install dependencies: ```npm install```
 
 
-Run locally:npm start -- <url>
+Build the project: ```npm run build```
+
+
+Run locally: ```npm start -- https://example.com```
 
 
 
-License
+## License
 MIT
